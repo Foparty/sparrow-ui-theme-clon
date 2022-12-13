@@ -1,0 +1,55 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* --------------------------------utilities ---------------------------------------- */
+
+.pill {
+  display: inline-block;
+  line-height: 1;
+  align-items: center;
+  padding: 0.2rem 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.bg-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+/* .flex {
+  display: flex;
+} */
+/* -------------------------------- end utilities ---------------------------------------- */
+
+.landing50 {
+  text-align: center;
+}
+
+.landing50 .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  height: 28vh;
+  order: 1;
+}
+.image-container img {
+  width: 100%;
+  height: 28vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content-container {
+  padding: 6rem 0;
+  order: 2;
+}
+
+.hero-pill {
+  font-size: 1.2rem;
+}
