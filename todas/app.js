@@ -1,3 +1,5 @@
+// animacion de portada
+
 let index = 1;
 
 const moveTo = (e) => {
@@ -33,3 +35,5 @@ const interval = 5000; // interval in milliseconds
 setInterval(() => {
   showSlide((index += 1));
 }, interval);
+
+// fin de animacion de portada
