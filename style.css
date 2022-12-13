@@ -56,6 +56,7 @@ body {
 .landing50 {
   text-align: center;
   border-bottom: 1px solid #e1e1e1;
+  background-color: #fff;
 }
 
 @media (min-width: 62rem) {
@@ -219,6 +220,7 @@ body {
 .introimagecenterplautext {
   text-align: justify;
   padding: 3rem 0;
+  background-color: #fff;
   border-bottom: 1px solid #e1e1e1;
 }
 
@@ -280,3 +282,44 @@ body {
 }
 
 /* -------------------------------- fin introimagecenterplautext --------------------------------*/
+
+/* -------------------------------- paralax --------------------------------*/
+
+.paralax-wrapper {
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.paralax-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.paralax-background {
+  transform: translateZ(-10px) scale(2);
+}
+
+.paralax-foreground {
+  color: white;
+  text-shadow: #000 1px 0 10px;
+  /* si fuese otro objeto tambien se le puede añadir la linea de abajo para 
+  que se mueva de manera diferente con respecto a los demas objetos de la pagina */
+  /* transform: translateZ(-5px) scale(1.5); */
+}
+
+.paralax-background, .paralax-foreground{
+  position: absolute;
+  height: 100%
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+/* -------------------------------- fin paralax --------------------------------*/
