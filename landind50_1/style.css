@@ -8,8 +8,13 @@ body {
   display: inline-block;
   line-height: 1;
   align-items: center;
-  padding: 0.2rem 0.2rem;
+  padding: 0.4rem 0.2rem 0.3rem 0.2rem;
   border-radius: 0.2rem;
+}
+@media (min-width: 62rem) {
+  .pill {
+    width: fit-content;
+  }
 }
 
 .bg-dark {
@@ -27,29 +32,122 @@ body {
 
 .landing50 {
   text-align: center;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+@media (min-width: 62rem) {
+  .landing50 {
+    text-align: left;
+    border-bottom: 0;
+  }
 }
 
 .landing50 .container {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 62rem) {
+  .landing50 .container {
+    flex-direction: row;
+    /* width: 100vw; */
+  }
+}
 
 .image-container {
-  height: 28vh;
+  height: 31vh;
   order: 1;
+}
+@media (min-width: 62rem) {
+  .image-container {
+    height: 100vh;
+    order: 2;
+    width: 50%;
+  }
 }
 .image-container img {
   width: 100%;
-  height: 28vh;
+  height: 31vh;
   object-fit: cover;
   object-position: center;
+}
+@media (min-width: 62rem) {
+  .image-container img {
+    height: 100vh;
+  }
 }
 
 .content-container {
   padding: 6rem 0;
   order: 2;
 }
+@media (min-width: 62rem) {
+  .content-container {
+    padding: 0 4rem;
+    order: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+}
 
 .hero-pill {
   font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.title-text {
+  padding: 1rem 0;
+}
+.title-text > * {
+  font-size: 4rem;
+  line-height: 1;
+}
+.title-text h1 {
+  text-decoration: underline;
+  font-weight: 800;
+}
+.title-text p {
+  font-weight: 200;
+}
+
+.hero-description {
+  max-width: 30ch;
+  margin-inline: auto;
+  font-family: serif;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+@media (min-width: 62rem) {
+  .hero-description {
+    text-align: left;
+    margin-inline: 0;
+  }
+}
+
+.social {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+@media (min-width: 62rem) {
+  .social {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+.social ul {
+  padding: 0;
+}
+.social li {
+  display: inline-block;
+  padding: 0 0.2rem;
+  font-size: 1rem;
 }
