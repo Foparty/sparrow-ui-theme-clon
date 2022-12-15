@@ -161,6 +161,7 @@ body {
 
 .title-text {
   padding: 1rem 0;
+  font-size: 2.4rem;
 }
 .title-text > * {
   font-size: 4rem;
@@ -323,3 +324,90 @@ body {
   z-index: -1;
 }
 /* -------------------------------- fin paralax --------------------------------*/
+
+
+
+/* -------------------------------- columnpoints --------------------------------*/
+
+.columnpoints {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.columnpoints-grid {
+  width: min(100% - 4rem, 62rem);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  text-align: left;
+}
+.grid-item {
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+}
+.grid-item i {
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+
+.grid-text-container {
+  
+}
+.grid-title {
+  font-size: 1.7rem;
+}
+.grid-text {
+  font-family: serif;
+  font-size: 1.1rem;
+  max-width: 63ch ;
+  color: #868686;
+}
+
+@media (min-width: 35rem) {
+  .columnpoints-grid {
+    width: min(100% - 15rem, 70rem);
+    
+  } 
+}
+@media (min-width: 62rem) {
+  .columnpoints-grid {
+    width: min(100% - 4rem, 70rem);
+    grid-template-columns: repeat(2, 1fr);
+  } 
+}
+
+/* -------------------------------- fin columnpoints --------------------------------*/
+
+
+/* -------------------------- Animate on scroll -------------------------- */
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.grid-item:nth-child(2) {
+  transition-delay: 200ms;
+}
+.grid-item:nth-child(3) {
+  transition-delay: 300ms;
+}
+.grid-item:nth-child(4) {
+  transition-delay: 400ms;
+}
+.grid-item:nth-child(5) {
+  transition-delay: 500ms;
+}
+.grid-item:nth-child(6) {
+  transition-delay: 600ms;
+}
