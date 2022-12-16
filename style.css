@@ -22,6 +22,7 @@ body {
   color: #fff;
 }
 
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -410,4 +411,5 @@ body {
 }
 .grid-item:nth-child(6) {
   transition-delay: 600ms;
-}
+
+
